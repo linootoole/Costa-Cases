@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Costa Cases — Your phone, but make it yours.</title>
-<meta name="description" content="Costa Cases — stylish phone cases made for everyday life.">
+<title>Stone — Costa Cases</title>
+<meta name="description" content="Stone phone case by Costa Cases.">
 <style>
 :root{--cream:#f8f4ef;--ink:#191715;--muted:#746d66;--accent:#c98f83;--line:#e6ded6;--white:#fff}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream)}
@@ -38,49 +38,25 @@ footer{max-width:1180px;margin:auto;padding:30px 24px;display:flex;justify-conte
 <div class="links"><a href="index.html#shop">Shop</a><a href="index.html#about">About</a><a href="index.html#faq">FAQ</a></div>
 <button class="cart" onclick="showCart()">Bag (<span class="count" id="count">0</span>)</button>
 </div></nav>
-<header class="hero">
-<div><div class="eyebrow">NEW • EVERYDAY ESSENTIALS</div><h1>Your phone,<br>but make it yours.</h1><p>Stylish cases for the little things you carry everywhere. Meet Costa Cases — simple, expressive, and made for everyday life.</p><a class="cta" href="#shop">SHOP CASES</a></div>
-<div class="hero-art"><div class="phone"><div class="camera"></div></div></div>
-</header>
-
-<section class="section" id="shop">
-<div class="section-head"><div><div class="eyebrow">THE COLLECTION</div><h2>Shop favorites</h2></div><div class="sub">Designed to be seen.</div></div>
-<div class="grid">
-<article class="card">
-<a class="product-link" href="blush.html">
-<div class="product-img" style="background:#eee6df"><div class="case" style="--case:#ead1c9"></div></div>
-<div class="card-body"><div class="name">Blush</div><div class="price">$24.00</div></div>
-</a>
-<button class="add" onclick="event.stopPropagation();add('Blush')">Add to bag</button>
-</article>
-<article class="card">
-<a class="product-link" href="costa-nude.html">
-<div class="product-img" style="background:#ead8d0"><div class="case" style="--case:#d8b4aa"></div></div>
-<div class="card-body"><div class="name">Costa Nude</div><div class="price">$24.00</div></div>
-</a>
-<button class="add" onclick="event.stopPropagation();add('Costa Nude')">Add to bag</button>
-</article>
-<article class="card">
-<a class="product-link" href="stone.html">
-<div class="product-img" style="background:#ddd9d0"><div class="case" style="--case:#c9c3b7"></div></div>
-<div class="card-body"><div class="name">Stone</div><div class="price">$24.00</div></div>
-</a>
-<button class="add" onclick="event.stopPropagation();add('Stone')">Add to bag</button>
-</article>
+<main class="product-page">
+<a class="back" href="index.html#shop">← Back to shop</a>
+<div class="product-layout">
+<div class="product-visual" style="background:#ddd9d0"><div class="case" style="--case:#c9c3b7"></div></div>
+<div class="product-info">
+<div class="eyebrow">COSTA CASES</div>
+<h1>Stone</h1>
+<div class="product-price">$24.00</div>
+<p class="product-description">A muted stone tone for an effortless everyday look. Built to keep your phone protected while still feeling like part of your style.</p>
+<label class="option-label" for="model">Choose your iPhone model</label>
+<select class="model-select" id="model">
+<option>iPhone 15</option><option>iPhone 15 Pro</option><option>iPhone 15 Pro Max</option>
+<option>iPhone 16</option><option>iPhone 16 Pro</option><option>iPhone 16 Pro Max</option>
+<option>iPhone 17</option><option>iPhone 17 Pro</option><option>iPhone 17 Pro Max</option>
+</select>
+<button class="product-add" onclick="add('Stone', document.getElementById('model').value)">Add Stone to bag</button>
 </div>
-</section>
-
-<section class="section about" id="about"><div class="about-inner"><div class="eyebrow">OUR STORY</div><h2>Made for your everyday.</h2><p>Costa Cases started with a simple idea: your phone is with you all day, so why shouldn't it look like you? We're building a small collection of cases that feel personal, effortless, and easy to love.</p></div></section>
-
-<section class="section" id="faq"><div class="section-head"><div><div class="eyebrow">QUESTIONS</div><h2>FAQ</h2></div></div>
-<div class="sub" style="max-width:720px">
-<p><strong>Which phones do you carry?</strong><br>We're starting with popular iPhone models. Add your exact models to the product listings before launch.</p>
-<p><strong>How long does shipping take?</strong><br>Set your shipping timeline here once your fulfillment process is finalized.</p>
-<p><strong>Can I return my case?</strong><br>Add your final return/exchange policy here before accepting orders.</p>
-</div></section>
-
-<section class="section newsletter"><div class="eyebrow" style="color:#c9c1bb">STAY IN THE LOOP</div><h2>First access to new drops.</h2><div class="sub">Join the Costa Cases list for launches and special offers.</div><form class="form" onsubmit="subscribe(event)"><input id="email" type="email" placeholder="Your email address" required><button>Join</button></form></section>
-
+</div>
+</main>
 <footer><div>© 2026 Costa Cases</div><div><a class="instagram-link" href="https://www.instagram.com/c.ostacases?stkn=MWxvMTl0NGtka2I4aQ%3D%3D" target="_blank" rel="noopener">Instagram</a> • TikTok • Email</div></footer>
 <div class="toast" id="toast"></div>
 <script>
